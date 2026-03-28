@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen font-sans">
+      <Hero />
+      <About />
+      <Projects />
+      <footer className="bg-hospital text-white py-6 text-center text-sm">
+        © 2026 Sachin Singh | Brampton, ON | sachin.ca73@gmail.com
+      </footer>
     </div>
   );
 }
