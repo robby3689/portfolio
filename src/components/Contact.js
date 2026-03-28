@@ -1,39 +1,56 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const form = useRef();
+  const [isSending, setIsSending] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // Replace these strings with your actual EmailJS IDs
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-      .then(() => {
-          alert("Message sent successfully! I'll get back to you soon.");
-      }, (error) => {
-          alert("Failed to send. Please email me directly at sachin.ca73@gmail.com");
-      });
+    setIsSending(true);
+
+    emailjs.sendForm(
+      'Service_gyrq6mn',   // Paste Service ID here
+      'template_jaljhjf',  // Paste Template ID here
+      form.current,
+      '-1bjX14fTqbwMZXLS'    // Paste Public Key here
+    )
+    .then((result) => {
+        alert("Message sent! I'll get back to you soon.");
+        setIsSending(false);
+        form.current.reset();
+    }, (error) => {
+        alert("Oops! Something went wrong. Please try again.");
+        setIsSending(false);
+    });
   };
 
   return (
-    <section id="contact" className="py-32 px-6">
-      <div className="max-w-4xl mx-auto glass p-12 rounded-[3rem] border border-white/10">
-        <h2 className="text-5xl font-black italic tracking-tighter text-white mb-10 text-center uppercase">
-          Contact <span className="text-emerald-500">Me</span>
-        </h2>
-        
-        <form ref={form} onSubmit={sendEmail} className="space-y-6">
-          <div className="grid md:grid-cols-2 gap-6">
-            <input type="text" name="user_name" placeholder="YOUR NAME" required 
-              className="bg-white/5 border border-white/10 rounded-2xl p-4 text-white focus:border-emerald-500 outline-none transition-all font-bold uppercase text-xs tracking-widest" />
-            <input type="email" name="user_email" placeholder="YOUR EMAIL" required 
-              className="bg-white/5 border border-white/10 rounded-2xl p-4 text-white focus:border-emerald-500 outline-none transition-all font-bold uppercase text-xs tracking-widest" />
-          </div>
-          <textarea name="message" placeholder="YOUR MESSAGE" rows="5" required 
-            className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 text-white focus:border-emerald-500 outline-none transition-all font-bold uppercase text-xs tracking-widest" />
+    <section id="contact" className="py-24 px-6 bg-slate-950">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl font-black text-white mb-4 uppercase italic">Let's Talk</h2>
+        <p className="text-slate-400 mb-12 uppercase tracking-widest text-xs">Available for May 2026 roles</p>
+
+        <form ref={form} onSubmit={sendEmail} className="grid gap-6">
+          <input 
+            type="text" name="user_name" placeholder="Full Name" required 
+            className="glass p-4 rounded-xl bg-white/5 border border-white/10 text-white focus:border-emerald-500 outline-none transition-all"
+          />
+          <input 
+            type="email" name="user_email" placeholder="Email Address" required 
+            className="glass p-4 rounded-xl bg-white/5 border border-white/10 text-white focus:border-emerald-500 outline-none transition-all"
+          />
+          <textarea 
+            name="message" rows="5" placeholder="Your Message" required 
+            className="glass p-4 rounded-xl bg-white/5 border border-white/10 text-white focus:border-emerald-500 outline-none transition-all"
+          ></textarea>
           
-          <button type="submit" className="w-full py-5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black rounded-2xl transition-all shadow-lg shadow-emerald-500/20 uppercase tracking-widest text-sm">
-            Send Message
+          <button 
+            type="submit" 
+            disabled={isSending}
+            className="bg-emerald-500 text-slate-950 font-black py-4 rounded-xl uppercase tracking-widest hover:bg-emerald-400 transition-all disabled:opacity-50"
+          >
+            {isSending ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>
