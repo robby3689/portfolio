@@ -15,7 +15,7 @@ export default function Navbar() {
           
           {/* Resume Download Button */}
           <a 
-            href="/Sachin_Singh_Resume.pdf" 
+            href="/Sachin_Singh_Resume.docx" 
             download 
             className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-6 py-2.5 rounded-xl font-black text-xs uppercase transition-all transform hover:scale-105"
           >
