@@ -14,11 +14,11 @@ const projects = [
     url: "https://graphicawork.xyz"
   },
   {
-    name: "Codeqube.io",
-    tag: "Backend Systems",
-    desc: "A sophisticated developer platform built to handle complex data relationships, course tracking, and secure digital asset delivery.",
-    url: "https://codeqube.io" // Link updated!
-  }
+  name: "Codeqube.io",
+  tag: "Full Stack",
+  desc: "A developer-centric platform for scalable solutions and asset management.",
+  url: "https://codeqube.io" 
+}
 ];
 
 export default function Projects() {

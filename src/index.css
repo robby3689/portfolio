@@ -4,16 +4,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
-body {
-  margin: 0;
-  background-color: #020617; /* Matches Graphicawork dark theme */
-  color: #f8fafc;
-  font-family: 'Inter', sans-serif;
+:root {
+  --emerald-500: #10b981;
 }
 
-/* Glassmorphism utility */
+body {
+  margin: 0;
+  background-color: #020617;
+  color: #f8fafc;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
 .glass {
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Fix for the marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 25s linear infinite;
 }
