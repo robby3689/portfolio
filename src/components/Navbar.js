@@ -12,7 +12,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           <a href="#about" className="text-[10px] font-bold text-slate-400 hover:text-emerald-400 transition-all uppercase tracking-widest">About</a>
           <a href="#projects" className="text-[10px] font-bold text-slate-400 hover:text-emerald-400 transition-all uppercase tracking-widest">Projects</a>
-          <a href="https://www.linkedin.com/in/sachin-singh-r-31615432a/" target="_blank" rel="noreferrer" className="text-[10px] font-bold text-slate-400 hover:text-emerald-400 transition-all uppercase tracking-widest">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/sachin-singh-r-31615432a/" target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold text-slate-400 hover:text-emerald-400 transition-all uppercase tracking-widest">LinkedIn</a>
           
           <a href="/Sachin_Singh_Resume.pdf" download className="bg-emerald-500 text-slate-950 px-4 py-2 rounded-lg font-black text-[10px] uppercase hover:bg-emerald-400 transition-all">
             Resume

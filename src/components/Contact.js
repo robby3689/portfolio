@@ -9,7 +9,6 @@ export default function Contact() {
     e.preventDefault();
     setIsSending(true);
 
-    // Initialize with your Public Key to be safe
     emailjs.init("-1bjX14fTqbwMZXLS");
 
     emailjs.sendForm(
