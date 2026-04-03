@@ -48,13 +48,16 @@ export default function Contact() {
       to_email: 'sachin.ca73@gmail.com'
     };
 
+    console.log('Sending email with params:', templateParams);
+
     emailjs.send(
-      'Service_gyrq6mn',
+      'service_z07gbre',
       'template_jaljhjf',
       templateParams,
       '-1bjX14fTqbwMZXLS'
     )
     .then((result) => {
+        console.log('SUCCESS!', result);
         setMessage({ type: 'success', text: 'Message sent successfully! I\'ll get back to you soon.' });
         setFormData({ user_name: '', user_email: '', message: '' });
         form.current.reset();
@@ -62,6 +65,7 @@ export default function Contact() {
         setTimeout(() => setMessage({ type: '', text: '' }), 5000);
     }, (error) => {
         console.error('FAILED...', error);
+        console.log('Error details:', JSON.stringify(error, null, 2));
         setMessage({ type: 'error', text: 'Oops! Something went wrong. Please try again later.' });
         setIsSending(false);
     });
