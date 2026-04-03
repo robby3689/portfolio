@@ -14,6 +14,7 @@ body {
   color: #f8fafc;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .glass {
@@ -22,7 +23,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Fix for the marquee animation */
+/* Marquee animation */
 @keyframes marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -30,5 +31,48 @@ body {
 
 .animate-marquee {
   display: inline-flex;
-  animation: marquee 25s linear infinite;
+  animation: marquee 30s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Float animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #059669;
 }
