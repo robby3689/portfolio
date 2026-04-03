@@ -1,0 +1,38 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="256" height="256" fill="#020617"/>
+  
+  <!-- Outer circle -->
+  <circle cx="128" cy="128" r="110" stroke="#10b981" stroke-width="8"/>
+  
+  <!-- Left angle bracket < -->
+  <path
+    d="M 70 85 L 110 128 L 70 171"
+    stroke="#10b981"
+    stroke-width="12"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+  
+  <!-- Right angle bracket > -->
+  <path
+    d="M 186 85 L 146 128 L 186 171"
+    stroke="#10b981"
+    stroke-width="12"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+  
+  <!-- Center slash / -->
+  <line
+    x1="128"
+    y1="80"
+    x2="128"
+    y2="176"
+    stroke="#10b981"
+    stroke-width="10"
+    stroke-linecap="round"
+  />
+</svg>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Logo from './Logo';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,9 +7,8 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 px-4 sm:px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center bg-white/5 backdrop-blur-md border border-white/10 px-4 sm:px-6 md:px-8 py-3 md:py-4 rounded-2xl shadow-xl">
         {/* Logo */}
-        <a href="/#" className="flex items-center gap-2 text-lg md:text-xl font-black tracking-tighter text-white hover:text-emerald-500 transition-colors">
-          <Logo />
-          <span>SACHIN<span className="text-emerald-500">.DEV</span></span>
+        <a href="/#" className="text-lg md:text-xl font-black tracking-tighter text-white hover:text-emerald-500 transition-colors">
+          SACHIN<span className="text-emerald-500">.DEV</span>
         </a>
         
         {/* Desktop Menu */}

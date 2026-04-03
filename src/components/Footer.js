@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from './Logo';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -23,12 +22,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 md:gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <Logo />
-              <h2 className="text-xl md:text-2xl font-black tracking-tighter text-white">
-                SACHIN<span className="text-emerald-500">.DEV</span>
-              </h2>
-            </div>
+            <h2 className="text-xl md:text-2xl font-black tracking-tighter text-white mb-4">
+              SACHIN<span className="text-emerald-500">.DEV</span>
+            </h2>
             <p className="text-slate-400 text-sm mb-4">
               Full Stack Developer crafting elegant digital solutions.
             </p>

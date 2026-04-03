@@ -18,7 +18,7 @@ export default function Hero() {
         {/* Left Side: Name & Title */}
         <div className={`text-center lg:text-left order-2 lg:order-1 transform transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="inline-block lg:inline-block bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6 text-emerald-400 text-xs font-bold uppercase tracking-widest">
-            💻 Available Now
+            Open for Opportunities
           </div>
           
           <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter mb-4 md:mb-6 italic text-white uppercase">

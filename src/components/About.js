@@ -10,8 +10,7 @@ export default function About() {
 
   const highlights = [
     { number: "3+", label: "Live Projects" },
-    { number: "100%", label: "Clean Code" },
-    { number: "500K+", label: "Monthly Users" }
+    { number: "100%", label: "Clean Code" }
   ];
 
   return (
