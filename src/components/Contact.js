@@ -140,7 +140,7 @@ export default function Contact() {
           </div>
           <div className="glass p-6 rounded-2xl border border-white/10">
             <p className="text-slate-400 text-sm mb-3">Social</p>
-            <a href="https://www.linkedin.com/in/sachin-singh-r-31615432a/" target="_blank" rel="noreferrer" className="text-white font-bold hover:text-emerald-400 transition-colors">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/sachin-singh-31615432a/" target="_blank" rel="noreferrer" className="text-white font-bold hover:text-emerald-400 transition-colors">LinkedIn</a>
           </div>
           <div className="glass p-6 rounded-2xl border border-white/10">
             <p className="text-slate-400 text-sm mb-3">Availability</p>

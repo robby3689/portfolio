@@ -15,7 +15,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8 lg:gap-10">
           <a href="#about" className="text-xs lg:text-sm font-bold text-slate-300 hover:text-emerald-400 transition-all uppercase tracking-widest">About</a>
           <a href="#projects" className="text-xs lg:text-sm font-bold text-slate-300 hover:text-emerald-400 transition-all uppercase tracking-widest">Projects</a>
-          <a href="https://www.linkedin.com/in/sachin-singh-r-31615432a/" target="_blank" rel="noopener noreferrer" className="text-xs lg:text-sm font-bold text-slate-300 hover:text-emerald-400 transition-all uppercase tracking-widest">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/sachin-singh-31615432a/" target="_blank" rel="noopener noreferrer" className="text-xs lg:text-sm font-bold text-slate-300 hover:text-emerald-400 transition-all uppercase tracking-widest">LinkedIn</a>
           
           <a href="#contact" className="bg-emerald-500 text-slate-950 px-5 lg:px-6 py-2 md:py-2.5 rounded-xl font-black text-xs lg:text-sm uppercase hover:bg-emerald-400 hover:scale-105 transition-all shadow-lg shadow-emerald-500/20">
             Let's Connect
@@ -47,7 +47,7 @@ export default function Navbar() {
           <a href="#projects" onClick={() => setIsOpen(false)} className="block text-sm font-bold text-slate-300 hover:text-emerald-400 transition-all uppercase tracking-widest px-4 py-2">
             Projects
           </a>
-          <a href="https://www.linkedin.com/in/sachin-singh-r-31615432a/" target="_blank" rel="noopener noreferrer" className="block text-sm font-bold text-slate-300 hover:text-emerald-400 transition-all uppercase tracking-widest px-4 py-2">
+          <a href="https://www.linkedin.com/in/sachin-singh-31615432a/" target="_blank" rel="noopener noreferrer" className="block text-sm font-bold text-slate-300 hover:text-emerald-400 transition-all uppercase tracking-widest px-4 py-2">
             LinkedIn
           </a>
           <a href="#contact" onClick={() => setIsOpen(false)} className="block bg-emerald-500 text-slate-950 px-4 py-2 rounded-lg font-black text-sm uppercase hover:bg-emerald-400 transition-all">

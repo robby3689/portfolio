@@ -10,7 +10,7 @@ export default function Footer() {
   ];
   
   const socials = [
-    { icon: 'LinkedIn', url: 'https://www.linkedin.com/in/sachin-singh-r-31615432a/', label: 'LinkedIn' },
+    { icon: 'LinkedIn', url: 'https://www.linkedin.com/in/sachin-singh-31615432a/', label: 'LinkedIn' },
     { icon: 'GitHub', url: 'https://github.com', label: 'GitHub' },
     { icon: 'Email', url: 'mailto:sachinsingh@example.com', label: 'Email' },
   ];
